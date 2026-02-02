@@ -1,0 +1,77 @@
+{
+  "personal": {
+    "name": "Ibrohim",
+    "role": "Full Stack Engineer",
+    "bio": "I build interactive experiences and leverage AI to create powerful, modern applications that solve complex problems.",
+    "email": "ibrohimshaymardanov011@gmail.com",
+    "phone": "+998 50 779 05 28",
+    "telegram": "https://t.me/cyberhacker011",
+    "location": "Gulistan, Syrdarya, Uzbekistan",
+    "github": "https://github.com/CyberHacker2011",
+    "linkedin": "https://uz.linkedin.com/in/ibrohim-shaymardanov-972472396",
+    "twitter": "https://x.com/ibrohim_011"
+  },
+  "technologies": [
+    "React",
+    "TypeScript",
+    "Next.js",
+    "Node.js",
+    "Python",
+    "Supabase",
+    "Tailwind",
+    "React Native",
+    "Electron",
+    "Expo",
+    "Express.js",
+    "Telegram Bot"
+  ],
+  "projects": [
+    {
+      "title": "SAT Plan Tracker",
+      "description": "Plan ai onboarding, ai assistant, plan tracking, notifications for gen Z students.",
+      "tech": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Supabase",
+        "Electron",
+        "Expo",
+        "React Native",
+        "Tailwind"
+      ],
+      "link": "satracker.uz"
+    },
+    {
+      "title": "Referral telegram bot",
+      "description": "Referral telegram bot for marathon, that will check for subscribtion of user, then ask user to add x users to get the private group link",
+      "tech": ["Node.js", "Express.js", "Telegram Bot"],
+      "link": "#"
+    },
+    {
+      "title": "Toptek - Device matcher Landing Page",
+      "description": "Landing page for Toptek - Device matcher, that will help users to find the best device for their needs.",
+      "tech": ["React", "Next.js", "Tailwind"],
+      "link": "toptek.vercel.app"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Competitive Programmer",
+      "role": "Competitive Programmer",
+      "period": "2022 - 2025",
+      "desc": "Participated in competitive programming olympiads, best achievement - KHIMIO bronze medal"
+    },
+    {
+      "company": "Toptek",
+      "role": "Full Stack Developer",
+      "period": "2025 - Present",
+      "desc": "Leading the development of Toptek - Device matcher, a platform that helps users find the best device for their needs."
+    },
+    {
+      "company": "SAT Plan Tracker",
+      "role": "Full Stack Developer",
+      "period": "2025 - Present ",
+      "desc": "Built the whole platform from scratch, with ai onboarding, ai assistant, plan tracking, notifications for gen Z students."
+    }
+  ]
+}

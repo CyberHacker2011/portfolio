@@ -53,20 +53,40 @@ export default function Projects() {
               className="modern-card group relative rounded-[2.5rem] overflow-hidden p-10 h-full flex flex-col"
             >
               <div className="mb-8 flex items-start justify-between">
-                <div className="p-4 rounded-2xl bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white shadow-lg shadow-primary/10">
-                  <Github size={28} />
-                </div>
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-4 rounded-2xl bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white shadow-lg shadow-primary/10"
+                  >
+                    <Github size={28} />
+                  </a>
+                ) : (
+                  <div className="p-4 rounded-2xl bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white shadow-lg shadow-primary/10">
+                    <Github size={28} />
+                  </div>
+                )}
                 <a
                   href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-white/5 text-slate-400 hover:text-primary hover:bg-primary/10 transition-all duration-300"
                 >
                   <ExternalLink size={20} />
                 </a>
               </div>
 
-              <h3 className="text-2xl font-black mb-4 text-white group-hover:text-primary transition-colors tracking-tight">
-                {project.title}
-              </h3>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/title inline-block"
+              >
+                <h3 className="text-2xl font-black mb-4 text-white group-hover/title:text-primary transition-colors tracking-tight">
+                  {project.title}
+                </h3>
+              </a>
 
               <p className="text-slate-400 mb-8 flex-grow leading-relaxed font-medium">
                 {project.description}

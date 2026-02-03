@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
-import { Mail, Send, MapPin, Phone, MessageSquare } from "lucide-react";
+import {
+  Mail,
+  Send,
+  MapPin,
+  Phone,
+  MessageSquare,
+  Github,
+  Linkedin,
+} from "lucide-react";
+import { cn } from "../lib/utils";
 import data from "../data.json";
 import TextReveal from "./TextReveal";
 
@@ -92,7 +101,7 @@ export default function Contact() {
               href={data.personal.telegram}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-8 rounded-3xl bg-primary text-white flex items-center justify-between group hover:scale-[1.02] active:scale-95 transition-all shadow-2xl shadow-primary/20"
+              className="p-8 rounded-3xl bg-[#0088cc] text-white flex items-center justify-between group hover:scale-[1.02] active:scale-95 transition-all shadow-2xl shadow-[#0088cc]/20"
             >
               <div className="flex items-center gap-6">
                 <div className="p-4 rounded-2xl bg-white/20 text-white">
@@ -112,6 +121,57 @@ export default function Contact() {
                 className="group-hover:translate-x-2 transition-transform"
               />
             </a>
+
+            <div className="grid grid-cols-3 gap-4">
+              {[
+                {
+                  name: "GitHub",
+                  href: data.personal.github,
+                  icon: Github,
+                  color: "hover:bg-white/10",
+                },
+                {
+                  name: "LinkedIn",
+                  href: data.personal.linkedin,
+                  icon: Linkedin,
+                  color: "hover:bg-blue-600/20 hover:text-blue-400",
+                },
+                {
+                  name: "X",
+                  href: data.personal.twitter,
+                  icon: ({ size }: any) => (
+                    <svg
+                      viewBox="0 0 24 24"
+                      width={size}
+                      height={size}
+                      fill="currentColor"
+                    >
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  ),
+                  color: "hover:bg-white/10",
+                },
+              ].map((social, i) => (
+                <a
+                  key={i}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "flex flex-col items-center justify-center p-6 rounded-3xl bg-white/5 border border-white/5 transition-all group",
+                    social.color,
+                  )}
+                >
+                  <social.icon
+                    size={24}
+                    className="mb-2 text-slate-400 group-hover:scale-110 transition-transform"
+                  />
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                    {social.name}
+                  </span>
+                </a>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>

@@ -39,19 +39,22 @@
         "React Native",
         "Tailwind"
       ],
-      "link": "satracker.uz"
+      "link": "https://satracker.uz",
+      "github": "https://github.com/CyberHacker2011"
     },
     {
       "title": "Referral telegram bot",
       "description": "Referral telegram bot for marathon, that will check for subscribtion of user, then ask user to add x users to get the private group link",
       "tech": ["Node.js", "Express.js", "Telegram Bot"],
-      "link": "#"
+      "link": "https://t.me/cyberhacker011",
+      "github": "https://github.com/CyberHacker2011"
     },
     {
       "title": "Toptek - Device matcher Landing Page",
       "description": "Landing page for Toptek - Device matcher, that will help users to find the best device for their needs.",
       "tech": ["React", "Next.js", "Tailwind"],
-      "link": "toptek.vercel.app"
+      "link": "https://toptek.vercel.app",
+      "github": "https://github.com/CyberHacker2011"
     }
   ],
   "experience": [
